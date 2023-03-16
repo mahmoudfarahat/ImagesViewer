@@ -1,27 +1,18 @@
 # ImageViewer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+ elementRef
+we access the element
+ElementRef is simply like document.getElementById('myId');
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+templateRef
+we access the child of the parent element
+TemplateRef is an embedded template which you can use in ViewContainerRef.createEmbeddedView to create Embedded View.
 
-## Code scaffolding
+*ngFor is doing the same, it reads the element as a TemplateRef and injects mutiple times to create view with data
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+TemplateRef cannot be used as an element for css decorations in .ts
 
-## Build
+viewContainer
+we can add or remove element inside this element
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
